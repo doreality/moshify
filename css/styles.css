@@ -6,7 +6,10 @@
   --color-body: #918ca4;
 }
 
+/* Typography */
+
 html {
+  /* 62.5% * 16px = 10px */
   font-size: 62.5%;
 }
 
