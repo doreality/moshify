@@ -130,7 +130,7 @@ a {
   font-size: 1.6rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -213,7 +213,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -280,6 +280,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .btn {
+    padding: 2rem 2vw;
+  }
+}
+
 /* Inputs */
 
 .input {
@@ -305,6 +311,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 3rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -487,10 +494,15 @@ a {
   bottom: 10px;
 }
 
+.quote .media {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .quote {
     font-size: 2.4rem;
     line-height: 1.5;
+    margin: auto 4rem;
   }
 
   .quote__author {
@@ -553,7 +565,7 @@ a {
 /* Callouts */
 
 .callout {
-  padding: 4rem;
+  padding: 4vw;
   border-radius: 5px;
 }
 
@@ -663,7 +675,7 @@ a {
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% -90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
@@ -769,8 +781,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -782,11 +795,6 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .block-domain__prices {
     font-size: 1.5rem;
   }
 }
@@ -874,6 +882,7 @@ a {
 
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -955,4 +964,11 @@ a {
   .footer__section .list__item {
     font-size: 1.5rem;
   }
+}
+
+/* Callout Block */
+
+.block-callout {
+  padding-top: 0;
+  transform: translateY(10rem);
 }
