@@ -19,7 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -359,10 +358,13 @@
         <div class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy, smiling customer"
-              />
+              <picture>
+                <source type="image/webp" srcset="images/testimonial.webp" />
+                <img
+                  src="images/testimonial.jpg"
+                  alt="A happy, smiling customer"
+                />
+              </picture>
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use xlink:href="images/sprite.svg#quotes"></use>
